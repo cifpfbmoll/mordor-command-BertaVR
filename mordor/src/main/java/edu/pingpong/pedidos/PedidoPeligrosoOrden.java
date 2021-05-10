@@ -7,11 +7,11 @@ import java.util.UUID;
 public class PedidoPeligrosoOrden implements PedidoPeligroso {
     private final String id;
     private String destino;
-    private int peso;
     private String instrucciones;
+    private int peso;
 
     public PedidoPeligrosoOrden(String destino, String instrucciones) {
-        this.id =  UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString();
         this.destino = destino;
         this.instrucciones = instrucciones;
     }
@@ -31,5 +31,8 @@ public class PedidoPeligrosoOrden implements PedidoPeligroso {
     }
 
     @Override
-    public String instrucciones(){return this.instrucciones;};
+    public String instrucciones() {
+        return this.instrucciones;
+    }
+
 }

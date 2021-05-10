@@ -1,15 +1,16 @@
 package edu.pingpong.pedidos;
+
 import edu.pingpong.interfaces.Pedido;
 
 import java.util.UUID;
 
-public class PedidoNacional implements Pedido{
+public class PedidoNacional implements Pedido {
     private final String id;
     private String destino;
     private int peso;
 
     public PedidoNacional(String destino, int peso) {
-        this.id =  UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString();
         this.destino = destino;
         this.peso = peso;
     }

@@ -1,4 +1,14 @@
+
 package edu.pingpong;
+import edu.pingpong.*;
+import edu.pingpong.interfaces.Pedido;
+import edu.pingpong.interfaces.PedidoPeligroso;
+import edu.pingpong.interfaces.TratamientoPedido;
+import edu.pingpong.pedidos.PedidoInternacional;
+import edu.pingpong.pedidos.PedidoPeligrosoOrden;
+import edu.pingpong.procesadores.Oficina;
+import edu.pingpong.tratamientos.TratamientoPedidoInternacional;
+import edu.pingpong.tratamientos.TratamientoPedidoPeligroso;
 
 /**
  * Crea una oficina que procesa pedidos.
@@ -37,7 +47,6 @@ package edu.pingpong;
  * para completar la evaluacion de la parte practica de ED.
  */
 
-/*
 public class App {
 
     public static void main(String[] args) {
@@ -67,10 +76,9 @@ public class App {
 
         System.out.println(oficina.printarStatus(oficina.procesa(peligroso), pedido));
 
-        */
-/**
+        /**
          * Los pedidos multiples se completan en el ultimo de los casos test
-         *//*
-
+         */
     }
-}*/
+}
+

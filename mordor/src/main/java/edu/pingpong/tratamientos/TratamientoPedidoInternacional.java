@@ -1,6 +1,5 @@
 package edu.pingpong.tratamientos;
 
-import edu.pingpong.interfaces.PedidoPeligroso;
 import edu.pingpong.interfaces.TratamientoPedido;
 import edu.pingpong.pedidos.PedidoInternacional;
 
@@ -12,7 +11,7 @@ public class TratamientoPedidoInternacional implements TratamientoPedido {
     }
 
     public boolean tratar(){
-        return (this.pedido.destino().equals("Mordor") ? false : true);
+        return (!this.pedido.destino().equals("Mordor"));
     };
     public PedidoInternacional getPedido(){
         return this.pedido;

@@ -1,5 +1,5 @@
 package edu.pingpong.interfaces;
 
-public interface PedidoPeligroso extends Pedido{
-    public String instrucciones();
+public interface PedidoPeligroso extends Pedido {
+    String instrucciones();
 }

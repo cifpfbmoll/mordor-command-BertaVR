@@ -1,10 +1,24 @@
 package edu.pingpong;
 
-import static org.junit.Assert.assertTrue;
-
-import edu.pingpong.*;
-
+import edu.pingpong.interfaces.Pedido;
+import edu.pingpong.interfaces.PedidoPeligroso;
+import edu.pingpong.interfaces.Procesador;
+import edu.pingpong.interfaces.TratamientoPedido;
+import edu.pingpong.pedidos.PedidoInternacional;
+import edu.pingpong.pedidos.PedidoNacional;
+import edu.pingpong.pedidos.PedidoPeligrosoOrden;
+import edu.pingpong.procesadores.Oficina;
+import edu.pingpong.tratamientos.TratamientoPedidoInternacional;
+import edu.pingpong.tratamientos.TratamientoPedidoMultiple;
+import edu.pingpong.tratamientos.TratamientoPedidoPeligroso;
 import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import static org.junit.Assert.*;
 
 /**
  * NO PUEDES MODIFICAR EL CODIGO DE LOS CASOS TEST
@@ -44,8 +58,8 @@ public class TestPedidos {
         assertNotNull(tratamientoOK);
         assertTrue(tratamientoOK.tratar());
     }
-
-    /**
+/*
+    *//**
      * Crea una clase TratamientoPedidoPeligroso que permita tratar
      * pedidos peligrosos.
      *
@@ -56,6 +70,7 @@ public class TestPedidos {
      * Crea las clases necesarias que se requieren en los casos test
      * respetando los constructores que se exigen.
      */
+
     @Test
     public void test_pedido_peligroso_KO() {
 
